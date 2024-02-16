@@ -1,5 +1,5 @@
-import { Component, ElementRef, ViewChild, AfterViewInit } from '@angular/core';
-import * as bootstrap from 'bootstrap';
+import { Component} from '@angular/core';
+
 
 
 
@@ -8,17 +8,6 @@ import * as bootstrap from 'bootstrap';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
 })
-// export class AppComponent {
-//   title = 'NepaliPatro';
-// }
-export class AppComponent implements AfterViewInit {
-  @ViewChild('helloModal') helloEl?: ElementRef;
-  modal?: bootstrap.Modal;
-  ngAfterViewInit() {
-    this.modal = new bootstrap.Modal(this.helloEl?.nativeElement, {});
-  }
- 
-  trigger() {
-    this.modal?.toggle();
-  }
+
+export class AppComponent  {
 }

@@ -10,6 +10,8 @@ import { NotFoundComponent } from './pages/not-found/not-found.component';
 import { LayoutComponent } from './pages/layout/layout.component';
 import { NavbarComponent } from './partials/navbar/navbar.component';
 import { MaincalendarComponent } from './partials/maincalendar/maincalendar.component';
+import { DetailedDatesComponent } from './partials/detailed-dates/detailed-dates.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http);
@@ -22,7 +24,8 @@ export function HttpLoaderFactory(http: HttpClient) {
     NotFoundComponent,
     LayoutComponent,
     NavbarComponent,
-    MaincalendarComponent
+    MaincalendarComponent,
+    DetailedDatesComponent
   ],
   imports: [
     BrowserModule,
@@ -34,7 +37,8 @@ export function HttpLoaderFactory(http: HttpClient) {
           useFactory: HttpLoaderFactory,
           deps: [HttpClient]
       }
-  })
+  }),
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

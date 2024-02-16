@@ -8,8 +8,11 @@ import { TranslateService } from '@ngx-translate/core';
 })
 export class MaincalendarComponent {
   constructor(private translate: TranslateService) {
-    translate.setDefaultLang('en'); // Default language (e.g., English)
-    translate.use('ne'); // Use Nepali
+    // translate.setDefaultLang('en'); // Default language (e.g., English)
+    
+}
+ngOnInit():void{
+  this.translate.setDefaultLang('ne'); // set default language (Nepali)
 }
 
 }
