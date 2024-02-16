@@ -25,3 +25,15 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
+## About this Web App
+
+This web app is designed to show the users who need to view the nepali calendars in more details like giving information on auspicious/favourable day (sahit) for marriage, to migrate to a new home etc.
+
+I have used Angular's internationalization (i18n) feature along with translation libraries like @ngx-translate/core for nepali translation which utilises the ne.json file kept inside i18n folder in assets.
+```
+npm install @ngx-translate/core --save
+
+```
+
+
